@@ -1,0 +1,48 @@
+# Scoring Methodology
+
+## Overview
+
+The Creative Fitness Score is designed to rank creatives within campaign environments using a combination of volume, experience, and value signals.
+
+The score is relative to other creatives in the same campaign. This means it is best used for comparing creatives that ran under similar campaign conditions.
+
+---
+
+## Components
+
+### Volume Score
+
+Volume score measures how much delivery and install volume a creative captured within its campaign.
+
+It is calculated as the average of:
+
+- share of campaign impressions
+- share of campaign installs
+
+Both values are multiplied by 10 to make the score easier to interpret.
+
+---
+
+### Experience Score
+
+Experience score measures how long a creative has been active compared with the oldest creative in the same campaign.
+
+This helps avoid over-ranking creatives that have not had enough time to gather meaningful performance data.
+
+---
+
+### Value Score
+
+Value score measures the creative's share of total campaign value.
+
+In this anonymised version, value is represented as a generic performance value field.
+
+---
+
+## Final Score
+
+```text
+Creative Fitness Score =
+  (Volume Score × Volume Weight)
++ (Experience Score × Experience Weight)
++ (Value Score × Value Weight)
